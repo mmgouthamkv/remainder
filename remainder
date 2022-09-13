@@ -1,0 +1,22 @@
+import time
+from plyer import notification
+k=0
+if __name__=="__main__":
+    while True:
+        if(k==0):
+            notification.notify(
+        title = "*** time to drink water",    #can be changed accordingly
+        message="take a glass of water",
+        app_icon="",                          #give the link of icon(image)
+        timeout=5
+            )
+            k=1
+        time.sleep(10)
+        if(k!=0):
+            notification.notify(
+        title = "*** time to sleep",
+        message="take a glass of water",
+        app_icon="",
+        timeout=5
+            )
+        k=0
